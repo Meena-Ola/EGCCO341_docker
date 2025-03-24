@@ -15,5 +15,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKERPW }}" | docker login -u "MeenaO" --password-stdin
-        docker image build -t MeenaO/nodedockergit:latest .
-        docker push MeenaO/nodedockergit:latest
+        docker image build -t MeenaO/EGCO341_docker:latest .
+        docker push MeenaO/EGCO341_docker:latest
